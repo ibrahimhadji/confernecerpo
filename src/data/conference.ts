@@ -63,3 +63,16 @@ export const chairs: Chair[] = [
 ];
 
 export const sponsors = ["TechNova Labs", "CyberGrid", "NextCompute", "DataSphere"];
+
+export type ImportantDate = {
+  event: string;
+  date: string;
+};
+
+export const importantDates: ImportantDate[] = [
+  { event: "Abstract Submission Opens", date: "April 15, 2026" },
+  { event: "Full Paper Submission Deadline", date: "July 30, 2026" },
+  { event: "Notification of Acceptance", date: "September 05, 2026" },
+  { event: "Camera-Ready Deadline", date: "October 01, 2026" },
+  { event: "Conference Dates", date: "November 18-20, 2026" },
+];

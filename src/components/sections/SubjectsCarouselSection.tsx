@@ -6,16 +6,14 @@ export function SubjectsCarouselSection({ subjects }: SubjectsCarouselSectionPro
   return (
     <section className="section-block">
       <div className="section-head">
-        <h2>Conference Subject Titles</h2>
+        <h2>Conference Tracks</h2>
       </div>
-      <div className="carousel-shell" aria-label="Conference subjects">
-        <div className="carousel-track">
-          {[...subjects, ...subjects].map((subject, index) => (
-            <span key={`${subject}-${index}`} className="carousel-item">
-              {subject}
-            </span>
-          ))}
-        </div>
+      <div className="track-grid" aria-label="Conference subjects">
+        {subjects.map((subject) => (
+          <article key={subject} className="track-card">
+            <h3>{subject}</h3>
+          </article>
+        ))}
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ export function SpeakersSection({ speakers }: SpeakersSectionProps) {
   return (
     <section className="section-block">
       <div className="section-head">
-        <h2>Featured Speakers</h2>
+        <h2>Keynote Speakers</h2>
       </div>
       <div className="speaker-grid">
         {speakers.map((speaker) => (
@@ -18,6 +18,7 @@ export function SpeakersSection({ speakers }: SpeakersSectionProps) {
             <div>
               <h3>{speaker.name}</h3>
               <p>{speaker.university}</p>
+              <button type="button">Profile</button>
             </div>
           </article>
         ))}
